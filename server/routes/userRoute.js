@@ -11,6 +11,6 @@ const route = express.Router();
 route.post("/create", create);
 route.get("/users", getAll);
 route.get("/users/:id", getById);
-route.put("/:id", update);
+route.put("/update/:id", update);
 route.delete("/:id", deleteItem);
 export default route;
